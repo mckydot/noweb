@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가춰야할 || 역량</title>
+    <link rel="stylesheet" href="./style/ability.css">
+</head>
+<body>
+    <div class="bigBox">
+        <h2>Search</h2>
+      </div>
+      <div class="container">
+        <input type="text" class="searchText inputField" id="input">
+        <button class="btn"><i class="fas fa-search"></i></button>
+        
+
+      </div>
+      <script lang="javascript">
+        let textField = document.getElementById('input')
+    
+        textField.onfocus = () => {
+          textField.classList.remove('searchText')
+        }
+    
+        textField.onblur = () =>{
+          if (textField.value == "")
+            textField.classList.add('searchText')
+        }
+      </script>
+
+<!-- 디자인코드 중 13389줄 중 13000줄 이상은 검색해서 이용 -->
+<!-- html코드 612줄 중 대략 400줄 정도는 검색해서 이용함 -->
+</body>
+</html>
